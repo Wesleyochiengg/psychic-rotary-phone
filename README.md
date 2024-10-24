@@ -1,2 +1,19 @@
-# psychic-rotary-phone
-write a c++ program thay will implement class named addition with three integers initialized to 22,30 and 50 respectively and a member  function to determine and output  the product of the integers
+#include <iostream>
+
+class Addition {
+private:
+    int a, b, c;
+
+public:
+    Addition() : a(22), b(30), c(50) {}
+
+    void product() {
+        std::cout << "The product of the integers is: " << (a * b * c) << std::endl;
+    }
+};
+
+int main() {
+    Addition add;
+    add.product();
+    return 0;
+}
